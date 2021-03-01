@@ -15,7 +15,7 @@ def client_handle(conn, addr_client):
     connected = True
     while connected:
         msg = conn.recv(buffer_size).decode(format)
-        if msg == "fuck":
+        if msg == "cookie":
             os.open(r"D:\python\PycharmProjects\helloworld\.py files\Black_board\cookie.txt")
         else:
             print(f"{addr_client} - {msg}")
